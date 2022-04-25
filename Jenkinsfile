@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
-              git branch: 'main', changelog: false, credentialsId: 'b0ce76ff-5532-4815-8184-9db4739e20a6', poll: false, url: 'https://github.com/rajil786/spring-boot-jsp.git'
+              git branch: 'develop', changelog: false, credentialsId: 'b0ce76ff-5532-4815-8184-9db4739e20a6', poll: false, url: 'https://github.com/rajil786/spring-boot-jsp.git'
             }
         }
         stage('Test') {
